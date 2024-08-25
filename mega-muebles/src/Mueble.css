@@ -1,0 +1,96 @@
+.mueble {
+    width: 220px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .mueble-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  
+  .mueble-info {
+    padding: 10px;
+  }
+  
+  .stars {
+    font-size: 1.2em;
+    color: #ffcc00;
+  }
+  
+  .star {
+    margin: 0 2px;
+  }
+  
+  .star.filled {
+    color: #ffcc00;
+  }
+  
+  .add-to-cart-button {
+    background-color: #464b47;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #3aa03a;
+    transform: scale(1.05);
+  }
+  
+  .add-to-cart-button:active {
+    transform: scale(0.95);
+  }
+  
+  .add-to-cart-button:focus {
+    outline: none;
+  }
+  
+  .favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: gray;
+    transition: color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .favorite-button.favorite {
+    color: red;
+  }
+  
+  .favorite-button:hover {
+    color: red;
+  }
+  
+  .confirmation-message {
+    color: #555755; 
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+    animation: fadeInOut 3s;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
